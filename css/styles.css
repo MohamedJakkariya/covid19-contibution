@@ -1,15 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-/* font-family: 'Baloo Bhaina 2', cursive; */
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Baloo Bhaina 2', cursive;
 }
 
-p,h1,h2,h3,h4,h5{
+h1,h2,h3,h4,h5{
     margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+p{
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
 }
 
 /* Back to top  */
@@ -171,6 +178,7 @@ p,h1,h2,h3,h4,h5{
 #prize .scan a{
     width: 100px;
     margin: 1rem 0;
+    background: #900c3f;
 }
 
 #prize .showcase-img{
@@ -343,9 +351,12 @@ p,h1,h2,h3,h4,h5{
 
 #footer .patron h1{
     font-size: 1rem;
+    
 }
 
 #footer .patron p{
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
     text-align: center;
     padding: 0;
 }
