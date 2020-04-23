@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500;600;700&display=swap');
+
+/* font-family: 'Baloo Bhaina 2', cursive; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+p,h1,h2,h3,h4,h5{
+    margin: 0;
+}
+
+#showcase .sponsored{
+    display : flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#showcase .sponsored .endoresed{
+    position: relative;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+}
+
+#showcase .sponsored .endoresed .images, 
+#showcase .sponsored .organized .images{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+}
+
+#showcase .sponsored .organized{
+    width: 40%;
+    position: relative;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+}
+
+#showcase .endoresed img, .organized img{
+    width: 70px;
+    height: 70px;
+    margin: 10px 10px;
+}
+
+
+@media (max-width: 600px){
+    
+    #showcase .endoresed, .organized {
+        display: block;
+        padding: 0;
+        margin: auto;
+        width: 100%;
+    }
+
+    #showcase .sponsored .organized{
+        width: auto;
+    }
+
+    #showcase .sponsored .endoresed .images, 
+    #showcase .sponsored .organized .images{
+    display: block;
+    padding: 0;
+    margin: auto;
+    text-align: center;
+    }
+
+    #showcase .endoresed img, .organized img{
+        width: 40px;
+        height: 40px;
+        margin: 0px;
+    }
+
+}
+
+/* #showcase .title  */
+
+#showcase .title h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #900c3f;
+}
+
+#showcase .title p{
+    font-size: 2rem;
+}
+
+#showcase .register{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#showcase .register h3{
+    color: #c70039;
+    padding: 3px 1rem;
+}
+
+#showcase .register h3:first-child{
+   border-right: 3px solid #c70039;
+}
+
+#showcase .register img{
+    display: block;
+    width: 200px;
+    position: absolute;
+    height:300px;
+    right: 0rem;
+    top: -10rem;
+}
+
+@media (max-width: 600px){
+    #showcase .title h2{
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+    #showcase .title p{
+        font-size: 1rem;
+    }
+    #showcase .register h3{
+        text-align: center;
+        padding-top: 0.5rem;
+    }
+    #showcase .register h3:first-child{
+        border-right: none;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        border-bottom-width: 5px;
+    }
+    #showcase .register .img{
+        height: 160px;
+    }
+    #showcase .register img{
+        position: relative;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        margin: auto;
+    }
+}
+
+#prize .heading{
+    font-size: 2rem;
+    text-align: center;
+    width: 70%;
+    margin: 1rem auto;
+    font-weight: 600;
+}
+
+#prize .showcase-img img, #prize .scan img{
+    width: 500px;
+}
+
+#prize .showcase-img{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+#prize .awards{
+    text-align: center;
+    color: #900c3f;
+    width: 80%;
+    margin: auto;
+}
+
+#prize .awards h3{
+    font-size: 1.5rem;
+    padding: 8px 0;
+}
+
+#prize .awards h3:first-child{
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+#prize .scan{
+    text-align: center;
+    margin: auto;
+}
+
+#prize .scan h3{
+    font-size: 1.9rem;
+    color: #900c3f;
+    font-weight: 700;
+}
+#prize .scan img{
+    width: 300px;
+    height: 300px;
+}
+
+@media (max-width: 600px){
+    #prize .awards,
+    #prize .heading{
+        width: 100%;
+    }
+    
+    #prize .heading{
+        font-size: 1.3rem;
+    }
+    
+    #prize .showcase-img img, #prize .scan img{
+        width: 100%;
+    }
+}
+
+#criteria div{
+    width: 80%;
+    margin: 2rem auto;
+    text-align: justify;
+}
+
+#criteria div h3,
+#Qr-code p:first-child,
+#statement .problem-statement h2,
+#statement .emerging-solution h2,
+#statement .app-specification h1,
+#footer h1 span,
+#footer h1:first-child
+{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #900c3f;
+    font-weight: 700;
+    padding: 0.3rem;
+}
+
+#criteria div p,
+#criteria div ul,
+#statement .problem-statement p,
+#statement .emerging-solution p,
+#statement .app-specification ol,
+#footer .patron p
+{
+    width: 80%;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    display: block;
+    margin: auto;
+    text-align: justify;
+}
+
+#criteria .tech-stack p{
+    text-align: center;
+}
+
+#Qr-code .sets img{
+    width: 200px;
+    margin: 1rem;
+}
+
+#Qr-code .social-media{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#Qr-code .social-media p{
+    padding: 3px 1rem;
+    font-size: 1.8rem;
+    color: black;
+    margin: 1rem 0;
+    font-weight: 400;
+    text-align: left;
+    text-transform: none;
+}
+
+#Qr-code .social-media p span{
+    padding: 0.4rem;
+}
+
+@media (max-width: 600px){
+    #Qr-code .social-media p{
+        font-size: 1rem;
+        margin: 0rem 1rem;
+        width: 100vw;
+    }
+    
+    #Qr-code .sets img{
+        margin: auto;
+    }
+}
+
+#statement .app-specification ol{
+    width: 85%;
+    padding: 0.5rem;
+}
+
+@media (max-width: 600px){
+
+    #statement .app-specification{
+        text-align: left;
+        display: block;
+        width: 100vw;
+        margin: auto;
+    }
+
+    #statement .app-specification h1{
+        font-size: 1.3rem;
+    }
+
+    #statement .app-specification ol{
+        width: 100%;
+        padding-left: 1rem;
+        font-size: 1.2rem;
+    }
+
+    #statement .app-specification ol li{
+        width: 90vw;
+    }
+
+}
+
+#footer  .patron{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+}
+
+#footer .patron h1{
+    font-size: 1rem;
+}
+
+#footer .patron p{
+    text-align: center;
+    padding: 0;
+}
+
+#footer .commitee .mems{
+    display: flex;
+    flex-direction: row;
+    margin: 0.9rem;
+}
+
+#footer .commitee {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+#footer .commitee .partition{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+}
+
+#footer .commitee .partition img{
+    height: 100px;
+}
+
+#footer .commitee .partition .member{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+#footer .commitee .partition .member p span:first-child,
+#footer .commitee .member p span:first-child{
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #900c3f;
+}
+
+#footer .commitee .member{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width:600px){
+    #footer h1 span,
+    #criteria div,
+    #criteria div p
+    {
+        font-size: 1rem;
+        width: 100%;
+        line-height: 1.3;
+        padding: 0.6rem;
+        text-align: justify;
+    }
+
+    #statement .problem-statement p,
+    #statement .emerging-solution p{
+        font: 1rem;
+        width: 100%;
+        line-height: 1.3;
+        padding: 1.2rem;
+        text-align: justify;
+    }
+
+    #footer  .patron{
+        width: 100%;
+        display: block;
+    }
+    
+    #footer h1:first-child,
+    #footer .patron p{
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    #footer .patron p{
+        padding: 0;
+    }
+
+    #footer .mems,#footer .mems .partition{
+        margin: 0.6rem 0;
+        flex-wrap: wrap;
+        width: 98%;
+        border-bottom: 2px dotted #900c3f;
+    }
+
+    #footer .commitee{
+        width: 90%;
+    }
+
+    #footer .commitee .partition img{
+        margin: auto;
+        display: block;
+    }    
+}
