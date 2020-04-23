@@ -40,43 +40,14 @@ p{
 }
 
 #showcase .sponsored{
-    display : flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-#showcase .sponsored .endoresed{
-    position: relative;
     display: flex;
-    /* flex-wrap: wrap; */
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+    width: 100vw - 100px;
 }
 
-#showcase .sponsored .endoresed .images, 
-#showcase .sponsored .organized .images{
-    display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: space-evenly;
+#showcase .sponsored img{
+    width: 100%;
+ 
 }
-
-#showcase .sponsored .organized{
-    width: 40%;
-    position: relative;    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
-}
-
-#showcase .endoresed img, .organized img{
-    width: 70px;
-    height: 70px;
-    margin: 10px 10px;
-}
-
 
 @media (max-width: 600px){
 
@@ -233,13 +204,19 @@ p{
     color: #900c3f;
     font-weight: 700;
 }
+
 #prize .scan img{
-    width: auto;
+    width: 400px;
     height: auto;
     
 }
 
 @media (max-width: 600px){
+    #prize .scan img{
+        width: auto;
+        height: auto;
+        
+    }
     #prize .awards,
     #prize .heading{
         width: 100%;
