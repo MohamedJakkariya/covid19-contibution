@@ -177,6 +177,10 @@ p{
     }
 }
 
+#prize{
+    background: url('asset/bg/bg.png');
+}
+
 #prize .heading{
     font-size: 2rem;
     text-align: center;
@@ -198,6 +202,7 @@ p{
 #prize .showcase-img{
     display: block;
     margin: auto;
+    width: 100%;
     text-align: center;
 }
 
