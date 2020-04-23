@@ -304,11 +304,14 @@ p{
 #Qr-code .social-media p{
     padding: 3px 1rem;
     font-size: 1.8rem;
-    color: black;
     margin: 1rem 0;
     font-weight: 400;
     text-align: left;
     text-transform: none;
+}
+
+#Qr-code .social-media p a{
+    color: black;
 }
 
 #Qr-code .social-media p span{
