@@ -158,6 +158,11 @@ p,h1,h2,h3,h4,h5{
     width: 500px;
 }
 
+#prize .scan a{
+    width: 100px;
+    margin: 1rem 0;
+}
+
 #prize .showcase-img{
     display: block;
     margin: auto;
