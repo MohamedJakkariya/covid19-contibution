@@ -29,6 +29,16 @@ p{
     background: #900c3f;
 }
 
+#header{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+#showcase{
+    padding-top: 3rem;
+}
+
 #showcase .sponsored{
     display : flex;
     justify-content: space-evenly;
@@ -69,6 +79,10 @@ p{
 
 
 @media (max-width: 600px){
+
+    #showcase{
+        padding-top: 4rem;
+    }
     
     #showcase .endoresed, .organized {
         display: block;
