@@ -14,9 +14,22 @@
     <!-- Link for Cheetsheet  -->
     <link rel="stylesheet" href="css/styles.css">
 
+    <style>
+        .virus-opacity{
+            background-image: url('asset/others/Virus_right_to_the_qrcode-01.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .virus-low-opacity{
+            background-image: url('asset/others/Virus_below_any_text-01.png');
+            /* background-repeat: no-repeat; */
+            background-size: contain;
+        }
+    </style>
 </head>
 <body>
-
+ <!-- <img src="asset/others/Virus_right_to_the_qrcode-01.png" alt=""> -->
     <!-- Back to top  -->
     <button class="back-to-top btn btn-danger">
         <span class="fa fa-arrow-circle-o-up"></span>
@@ -65,7 +78,7 @@
         <div class="title text-center container mt-5">
             <h2>covid - 19 national bio informatics online hackathon for full stackers</h2>
             <p>
-                <span class="fa fa-internet-explorer"></span>
+                <img src="asset/logo/domain.png" width="50px" alt="">
                 covid19hackathon.in</p>
         </div>
 
@@ -235,9 +248,10 @@
         </div>
     </section>
 
-    <section id="statement" class="mt-4">
+    <section id="statement" class="mt-4  virus-opacity">
         <div class="problem-statement">
             <h2>Problem Statement</h2>
+            <!-- <img src="asset/others/Virus_left_to_cashprizes_Opacitylow-01.png" alt=""> -->
             <p>
                 COVID 19 Pandemic has infected millions, killed lakhs worldwide
                 forcing the entire global population into a complete lockdown
@@ -316,7 +330,7 @@
             </h1>
             <ol>
                 <div class="row col-lg-12">
-                    <div class="col-lg-6 col-sm-12">
+                    <div class="col-lg-6 col-sm-12 virus-low-opacity">
                         <li>Stranded migrant labor tracking</li>
                         <li>Labor shelter mapping</li>
                         <li>Volunteers registration and assigning work</li>

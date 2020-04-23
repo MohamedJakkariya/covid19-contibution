@@ -9,6 +9,11 @@ font-family: 'Poppins', sans-serif; */
     box-sizing: border-box;
 }
 
+body{
+    background: url('./asset/logo/BG_WITHLOGOS-04.png');
+    /* background: red; */
+}
+
 h1,h2,h3,h4,h5{
     margin: 0;
     font-family: 'Oswald', sans-serif;
