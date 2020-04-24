@@ -248,7 +248,8 @@ p{
 #statement .emerging-solution h2,
 #statement .app-specification h1,
 #footer h1 span,
-#footer h1:first-child
+#footer .commitee h1,
+#footer h1
 {
     text-align: center;
     font-size: 2rem;
@@ -275,6 +276,10 @@ p{
 
 #criteria .tech-stack p{
     text-align: center;
+}
+
+#criteria .tech-stack img{
+    width: 100%;
 }
 
 #Qr-code .sets img{
@@ -356,44 +361,36 @@ p{
 
 #footer .patron h1{
     font-size: 1rem;
-    
 }
 
 #footer .patron p{
-    /* font-family: 'Oswald', sans-serif; */
-    /* font-family: 'Poppins', sans-serif; */
     text-align: center;
     padding: 0;
 }
 
 #footer .commitee .mems{
     display: flex;
-    flex-direction: row;
-    margin: 0.9rem;
-}
-
-#footer .commitee {
-    width: 80%;
-    display: block;
-    margin: auto;
-}
-
-#footer .commitee .partition{
-    display: flex;
-    flex-direction: row;
-    width: 60%;
-}
-
-#footer .commitee .partition img{
-    height: 100px;
-}
-
-#footer .commitee .partition .member{
-    width: 90%;
-    display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
+    margin: 0.9rem;
+    align-items: center;
+    
+}
+
+#footer .commitee .mems .partition{
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-between;
+}
+
+#footer .commitee .mems img{
+    height: 100px;
+    width: 150px;
+}
+
+#footer .commitee .mems .member{
+    width: 70%;
 }
 
 #footer .commitee .partition .member p span:first-child,
@@ -401,13 +398,6 @@ p{
     font-size: 0.9rem;
     font-weight: 700;
     color: #900c3f;
-}
-
-#footer .commitee .member{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
 }
 
 @media only screen and (max-width:600px){
@@ -438,8 +428,8 @@ p{
     }
 
     
-    #criteria div{
-        width: 90%;
+    #footer .commitee .mems .partition{
+        width: 100%;
     }
 
     #statement .problem-statement p,
@@ -466,19 +456,16 @@ p{
         padding: 0;
     }
 
-    #footer .mems,#footer .mems .partition{
-        margin: 0.6rem 0;
+    #footer .mems .partition{
+        display: flex;
         flex-wrap: wrap;
-        width: 98%;
-        border-bottom: 2px dotted #900c3f;
+        justify-content: center;
+        align-items: center;
     }
-
-    #footer .commitee{
-        width: 90%;
-    }
-
-    #footer .commitee .partition img{
-        margin: auto;
+    
+    #footer .mems .partition img, #footer .mems .partition .member{
         display: block;
-    }    
+        margin: auto;
+        text-align: center;
+    }
 }
